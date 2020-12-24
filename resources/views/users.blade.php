@@ -132,7 +132,7 @@
 
 </html>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function () { //Изменение users
         $('#update-form').on('submit', function (event) {
             event.preventDefault();
             let hash = $('.modal-field-hash').val();

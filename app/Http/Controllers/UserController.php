@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function createUser(Request $request): object
-    { //Для работы с webhook
+    public function createUser(Request $request): object //Для работы с webhook
+    {
         get8::updateOrCreate(['hash' => $request['hash']],
             ['name' => $request['name'],
                 'family' => $request['family'],

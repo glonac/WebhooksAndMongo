@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/webhook', 'App\Http\Controllers\UserController@createUser');
+Route::post('/changeUser', 'App\Http\Controllers\UserController@createUser');
+Route::post('/webhook' , 'App\Http\Controllers\UserController@showUser');
+Route::get('/users' , 'App\Http\Controllers\UserController@showUser');
 Route::get('/' ,function (){
     return view('welcome');
 });
-Route::get('/users' , 'App\Http\Controllers\UserController@showUser');
 
